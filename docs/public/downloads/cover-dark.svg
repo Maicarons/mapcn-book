@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="640" viewBox="0 0 480 640" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="640" fill="url(#bg)"/>
+  <g stroke="#475569" stroke-width="1.2" fill="none" opacity="0.6">
+    <path d="M40 120 C 140 90, 200 170, 320 130 S 440 200, 440 200"/>
+    <path d="M30 240 C 150 210, 220 300, 360 250 S 450 320, 450 320"/>
+    <path d="M50 420 C 160 390, 240 470, 380 430"/>
+  </g>
+  <circle cx="320" cy="130" r="6" fill="#60a5fa"/>
+  <circle cx="360" cy="250" r="6" fill="#60a5fa"/>
+  <circle cx="380" cy="430" r="6" fill="#60a5fa"/>
+  <text x="48" y="540" font-size="40" font-weight="700" fill="#f8fafc">Mapcn</text>
+  <text x="48" y="582" font-size="26" font-weight="600" fill="#cbd5e1">从入门到进阶</text>
+  <text x="48" y="612" font-size="14" fill="#94a3b8">基于 MapLibre GL 的 React 地图组件库</text>
+</svg>

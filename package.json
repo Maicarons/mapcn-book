@@ -1,0 +1,20 @@
+{
+  "name": "mapcn-book",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Mapcn 从入门到进阶 —— 基于官方文档的系统性实战指南（VitePress 文档站）",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "normalize": "python tools/normalize_chapters.py",
+    "escape": "python tools/escape_angle.py",
+    "gen:reference": "python tools/gen_reference.py",
+    "build:book": "python tools/build_book.py"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
+  }
+}
