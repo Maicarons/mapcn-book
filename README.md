@@ -5,7 +5,7 @@
 [![Deploy to GitHub Pages](https://github.com/Maicarons/mapcn-book/actions/workflows/deploy.yml/badge.svg)](https://github.com/Maicarons/mapcn-book/actions/workflows/deploy.yml)
 
 - 📖 在线文档站（GitHub Pages）：<https://maicarons.github.io/mapcn-book/>
-- 📘 整书 PDF / DOCX：见站点内「下载与资源」页
+- 📘 整书 PDF / DOCX / 教学 PPTX：见站点内「下载与资源」页
 
 ## 本书结构
 
@@ -27,7 +27,7 @@ mapcn-book/
 ├── .github/workflows/deploy.yml   # GitHub Pages 自动构建与部署
 ├── docs/                          # VitePress 内容根目录
 │   ├── .vitepress/                # 站点配置与主题
-│   ├── public/downloads/          # PDF / DOCX / 封面 SVG（发布资源）
+│   ├── public/downloads/          # PDF / DOCX / PPTX / 封面 SVG（发布资源）
 │   ├── chapters/                  # 14 章正文（规范性标题）
 │   ├── reference/                 # 官方文档研读摘要（12 篇）
 │   ├── index.md                   # 首页
@@ -38,6 +38,7 @@ mapcn-book/
 │   ├── escape_angle.py            # 转义非代码块中的裸 <Component>
 │   ├── gen_reference.py           # 由 docs-zh 生成 reference/ 研读笔记
 │   └── build_book.py              # 14 章 -> 整书 Markdown
+│   └── build_pptx.py              # 14 章 -> 教学 PPTX（配套讲义）
 ├── manuscript/book.md             # 由 14 章汇编而成的整书 Markdown
 ├── docs-en/                       # 步骤一：官方文档英文 Markdown
 ├── docs-zh/                       # 步骤二：官方文档中文译稿
@@ -64,6 +65,7 @@ python tools/escape_angle.py     # 转义非代码块中的裸 <Component>
 python tools/normalize_chapters.py   # 统一章节标题（第 NN 章 …）
 python tools/gen_reference.py    # 由 docs-zh 生成 reference/ 研读笔记
 python tools/build_book.py       # 生成 manuscript/book.md（整书）
+python tools/build_pptx.py       # 生成 docs/public/downloads/mapcn-teaching.pptx（教学讲义）
 ```
 
 整书 PDF / DOCX 由 `manuscript/book.md` 经 Pandoc + XeLaTeX（CJK 字体：Microsoft YaHei）转换生成，存放于 `docs/public/downloads/`：

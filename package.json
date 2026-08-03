@@ -11,7 +11,8 @@
     "normalize": "python tools/normalize_chapters.py",
     "escape": "python tools/escape_angle.py",
     "gen:reference": "python tools/gen_reference.py",
-    "build:book": "python tools/build_book.py"
+    "build:book": "python tools/build_book.py",
+    "build:pptx": "python tools/build_pptx.py"
   },
   "devDependencies": {
     "vitepress": "^1.6.3",
