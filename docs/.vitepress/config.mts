@@ -7,6 +7,24 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const docsDir = resolve(__dirname, '..')
 const chaptersDir = join(docsDir, 'chapters')
 const referenceDir = join(docsDir, 'reference')
+const zhDir = join(docsDir, 'zh')
+const enDir = join(docsDir, 'en')
+
+// Auto-scan a docs folder (already build-safe: fenced code / backticked tags)
+// into a sorted sidebar list. linkPrefix is the site route, e.g. '/zh'.
+function scanSection(dir: string, linkPrefix: string) {
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.md'))
+    .sort()
+    .map((f) => ({
+      text: titleOf(join(dir, f)),
+      link: `${linkPrefix}/${f.replace(/\.md$/, '')}`,
+    }))
+}
+
+const zhItems = scanSection(zhDir, '/zh')
+const enItems = scanSection(enDir, '/en')
 
 function titleOf(file: string): string {
   const txt = fs.readFileSync(file, 'utf-8')
@@ -55,6 +73,8 @@ const sidebar = [
   },
   ...bookSidebar,
   { text: '参考资料（官方文档研读）', items: refItems },
+  { text: '官方文档（中文）', items: zhItems },
+  { text: 'Official Docs (English)', items: enItems },
 ]
 
 const refNav = refItems.map((r) => ({ text: r.text, link: r.link }))
@@ -73,6 +93,13 @@ export default defineConfig({
       { text: '前言', link: '/preface' },
       { text: '分章阅读', link: '/chapters/chapter01' },
       { text: '参考资料', items: refNav },
+      {
+        text: '官方文档',
+        items: [
+          { text: '中文文档', link: '/zh/00-introduction' },
+          { text: 'English', link: '/en/00-introduction' },
+        ],
+      },
       { text: '下载', link: '/downloads' },
     ],
     sidebar,

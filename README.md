@@ -32,21 +32,21 @@ mapcn-book/
 │   ├── reference/                 # 官方文档研读摘要（12 篇）
 │   ├── index.md                   # 首页
 │   ├── preface.md                 # 前言
-│   └── downloads.md               # 下载与在线阅览
+│   ├── downloads.md               # 下载与在线阅览
+│   ├── zh/                        # 官方文档中文译稿（12 篇，可在线浏览）
+│   └── en/                        # 官方文档英文原版（12 篇，可在线浏览）
 ├── tools/                         # 内容生产流水线
 │   ├── normalize_chapters.py      # 章节标题规范化（第 NN 章 …）
 │   ├── escape_angle.py            # 转义非代码块中的裸 <Component>
-│   ├── gen_reference.py           # 由 docs-zh 生成 reference/ 研读笔记
+│   ├── gen_reference.py           # 由 docs/zh 生成 reference/ 研读笔记
 │   └── build_book.py              # 14 章 -> 整书 Markdown
 │   └── build_pptx.py              # 14 章 -> 教学 PPTX（配套讲义）
 ├── manuscript/book.md             # 由 14 章汇编而成的整书 Markdown
-├── docs-en/                       # 步骤一：官方文档英文 Markdown
-├── docs-zh/                       # 步骤二：官方文档中文译稿
 ├── package.json                   # VitePress 依赖与脚本
 └── README.md
 ```
 
-> `docs-en/` 与 `docs-zh/` 为从项目文档（`src/app/(main)/docs`）导出的英文与中文版本，作为原始素材；正式发布内容位于 `docs/`（VitePress 站点）。
+> `docs/zh/` 与 `docs/en/` 为从项目文档（`src/app/(main)/docs`）导出的中文译稿与英文原版，既是整书与研读笔记的**原始素材**，也已直接发布到 VitePress 站点（中文文档 / English 两个侧栏分组），可在浏览器中对照阅读。
 
 ## 本地开发
 
@@ -63,7 +63,7 @@ npm run docs:build    # 构建到 docs/.vitepress/dist
 ```bash
 python tools/escape_angle.py     # 转义非代码块中的裸 <Component>
 python tools/normalize_chapters.py   # 统一章节标题（第 NN 章 …）
-python tools/gen_reference.py    # 由 docs-zh 生成 reference/ 研读笔记
+python tools/gen_reference.py    # 由 docs/zh 生成 reference/ 研读笔记
 python tools/build_book.py       # 生成 manuscript/book.md（整书）
 python tools/build_pptx.py       # 生成 docs/public/downloads/mapcn-teaching.pptx（教学讲义）
 ```

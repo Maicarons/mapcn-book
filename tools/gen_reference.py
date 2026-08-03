@@ -21,7 +21,7 @@ import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
-SRC_DIR = os.path.join(REPO, "docs-zh")
+SRC_DIR = os.path.join(REPO, "docs", "zh")
 REF_DIR = os.path.join(REPO, "docs", "reference")
 os.makedirs(REF_DIR, exist_ok=True)
 
