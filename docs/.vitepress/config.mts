@@ -85,6 +85,46 @@ export default defineConfig({
   title: 'Mapcn 从入门到进阶',
   description:
     '基于 mapcn 官方文档的系统性实战指南：构建于 MapLibre GL 之上的 React 地图组件库，从入门到进阶。',
+  head: [
+    ['meta', { name: 'theme-color', content: '#0F766E' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'Mapcn 从入门到进阶' }],
+    ['meta', { property: 'og:title', content: 'Mapcn 从入门到进阶' }],
+    [
+      'meta',
+      {
+        property: 'og:description',
+        content:
+          '基于 mapcn 官方文档的系统性实战指南：构建于 MapLibre GL 之上的 React 地图组件库，从入门到进阶。',
+      },
+    ],
+    [
+      'meta',
+      {
+        property: 'og:image',
+        content: 'https://maicarons.github.io/mapcn-book/downloads/cover-light.svg',
+      },
+    ],
+    ['meta', { property: 'og:url', content: 'https://maicarons.github.io/mapcn-book/' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'Mapcn 从入门到进阶' }],
+    [
+      'meta',
+      {
+        name: 'twitter:description',
+        content:
+          '基于 mapcn 官方文档的系统性实战指南：构建于 MapLibre GL 之上的 React 地图组件库，从入门到进阶。',
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'twitter:image',
+        content: 'https://maicarons.github.io/mapcn-book/downloads/cover-light.svg',
+      },
+    ],
+    ['link', { rel: 'icon', href: '/favicon.svg' }],
+  ],
   lastUpdated: true,
   cleanUrls: true,
   themeConfig: {

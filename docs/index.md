@@ -28,8 +28,8 @@ features:
     title: 复制粘贴即拥有
     details: mapcn 是 copy-paste 式的组件库，书中逐章拆解 Map / Marker / Route / Arc / GeoJSON / Cluster 等核心能力。
   - icon: 📎
-    title: 配套整书 PDF 与 DOCX
-    details: 提供整书 PDF（在线阅览 + 下载）与可编辑 DOCX 源文件，便于教学与离线阅读。
+    title: 配套 PDF / DOCX / 讲义 PPT
+    details: 提供整书 PDF（在线阅览 + 下载）、可编辑 DOCX 源文件，以及 92 页配套教学 PPTX 讲义，便于教学与离线阅读。
   - icon: 🌐
     title: 官方文档中英对照
     details: 同一套官方文档提供中文译稿与英文原版，可在站点内对照阅读，精准理解组件 API。
