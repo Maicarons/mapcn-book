@@ -25,3 +25,46 @@
   border-radius: 8px;
   background: var(--vp-c-bg-soft);
 }
+
+/* 首页「官方文档」入口卡片（深浅色主题自适应） */
+.docs-entry {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+.docs-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 20px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  text-decoration: none;
+  color: var(--vp-c-text-1);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.docs-card:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-2px);
+}
+.docs-card-flag {
+  font-size: 28px;
+  line-height: 1;
+}
+.docs-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.docs-card-desc {
+  font-size: 0.88rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+}
+.docs-card-go {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+}

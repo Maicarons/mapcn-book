@@ -55,7 +55,19 @@ mapcn 是一套**免费、开源、可复制粘贴**的 React 地图组件库。
 
 除了本书的系统性讲解，站点还直接收录了 mapcn **官方文档的中文译稿与英文原版**，便于你对照查阅原始 API 描述、或在英文术语与中文表述之间来回切换：
 
-- 🇨🇳 [官方文档（中文）](/zh/00-introduction)
-- 🇬🇧 [Official Docs (English)](/en/00-introduction)
+<div class="docs-entry">
+  <a class="docs-card" href="/zh/00-introduction">
+    <span class="docs-card-flag">🇨🇳</span>
+    <span class="docs-card-title">官方文档（中文）</span>
+    <span class="docs-card-desc">完整中文译稿，从组件总览到 API 参考逐一对照，适合以中文精读。</span>
+    <span class="docs-card-go">阅读中文文档 →</span>
+  </a>
+  <a class="docs-card" href="/en/00-introduction">
+    <span class="docs-card-flag">🇬🇧</span>
+    <span class="docs-card-title">Official Docs (English)</span>
+    <span class="docs-card-desc">The original English documentation, verbatim from mapcn.dev — best for precise API terms.</span>
+    <span class="docs-card-go">Read English docs →</span>
+  </a>
+</div>
 
 这两套文档与本书「参考资料（官方文档研读）」互为补充：研读摘要帮你快速抓住重点，完整官方文档则保留全部细节。
