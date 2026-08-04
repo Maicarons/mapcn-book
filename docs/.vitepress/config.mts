@@ -98,13 +98,16 @@ export default defineConfig({
           '基于 mapcn 官方文档的系统性实战指南：构建于 MapLibre GL 之上的 React 地图组件库，从入门到进阶。',
       },
     ],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
     [
       'meta',
       {
         property: 'og:image',
-        content: 'https://maicarons.github.io/mapcn-book/downloads/cover-light.svg',
+        content: 'https://maicarons.github.io/mapcn-book/og-cover.png',
       },
     ],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
     ['meta', { property: 'og:url', content: 'https://maicarons.github.io/mapcn-book/' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'Mapcn 从入门到进阶' }],
@@ -120,7 +123,7 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:image',
-        content: 'https://maicarons.github.io/mapcn-book/downloads/cover-light.svg',
+        content: 'https://maicarons.github.io/mapcn-book/og-cover.png',
       },
     ],
     ['link', { rel: 'icon', href: '/favicon.svg' }],

@@ -1,5 +1,26 @@
 ---
 layout: home
+head:
+  - - link
+    - rel: canonical
+      href: https://maicarons.github.io/mapcn-book/
+  - - script
+    - type: application/ld+json
+    - >-
+        {
+          "@context": "https://schema.org",
+          "@type": "Book",
+          "name": "Mapcn 从入门到进阶",
+          "headline": "基于官方文档的系统性实战指南",
+          "description": "基于 mapcn 官方文档的系统性实战指南：构建于 MapLibre GL 之上的 React 地图组件库，从入门到进阶。",
+          "url": "https://maicarons.github.io/mapcn-book/",
+          "image": "https://maicarons.github.io/mapcn-book/og-cover.png",
+          "author": { "@type": "Organization", "name": "Mapcn 从入门到进阶 编撰团队" },
+          "publisher": { "@type": "Organization", "name": "mapcn-book" },
+          "inLanguage": "zh-CN",
+          "datePublished": "2026-08-04",
+          "bookFormat": "EBook"
+        }
 
 hero:
   name: "Mapcn 从入门到进阶"

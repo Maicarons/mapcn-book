@@ -13,7 +13,8 @@
     "gen:reference": "python tools/gen_reference.py",
     "build:book": "python tools/build_book.py",
     "build:pptx": "python tools/build_pptx.py",
-    "build:sitemap": "python tools/gen_sitemap.py"
+    "build:sitemap": "python tools/gen_sitemap.py",
+    "build:og": "python tools/gen_og_image.py docs/public/og-cover.png"
   },
   "devDependencies": {
     "vitepress": "^1.6.3",
